@@ -41,6 +41,18 @@
   font-size: 0.95rem;
 }
 
+.app-header__right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  height: 100%;
+}
+
+.brand-logo {
+  height: 3rem;
+  width: auto;
+}
+
 .app-header__burger {
   border: none;
   background: transparent;
