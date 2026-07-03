@@ -1,0 +1,58 @@
+/* ===================================================================
+   vsTransfer Training — print.css
+   Print-friendly output: content only, no chrome
+   =================================================================== */
+
+.app-header,
+.sidebar,
+.sidebar-scrim,
+.bottom-nav,
+.toast,
+.skip-link,
+.kc-actions,
+.module-list__link:disabled {
+  display: none !important;
+}
+
+body {
+  padding: 0;
+  background: #fff;
+  color: #000;
+}
+
+.app-shell { display: block; }
+
+.main-content { padding: 0; }
+
+.module {
+  box-shadow: none;
+  border: none;
+  padding: 0;
+  max-width: none;
+}
+
+.module__objective {
+  background: none;
+  border-left: 2px solid #000;
+  color: #000;
+}
+
+.key-messages li,
+.knowledge-check {
+  background: none;
+  border: 1px solid #999;
+}
+
+.steps li::before {
+  background: #000;
+  color: #fff;
+}
+
+a[href]::after {
+  content: none;
+}
+
+* {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
