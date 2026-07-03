@@ -399,5 +399,25 @@ p { margin: 0 0 var(--space-4); }
 }
 
 @media (min-width: 64rem) {
-  .main-content { padding: var(--space-7) var(--space-8); }
+  .main-content {
+    padding: var(--space-7) var(--space-8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-content > * {
+    width: 100%;
+  }
+  .breadcrumb,
+  .module {
+    max-width: 48rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  .breadcrumb,
+  .module {
+    max-width: 54rem;
+  }
+  .module { padding: var(--space-8); }
 }
